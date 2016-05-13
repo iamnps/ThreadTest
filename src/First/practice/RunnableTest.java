@@ -12,7 +12,7 @@ public class RunnableTest implements Runnable{
 	@Override
 	public void run() {
 		for (int i = 0; i < 5; i++) {
-			Thread.yield();
+			Thread.yield();//有了这段代码，会使你的输出变得非常不一样
 			System.out.println(temp + "runMethod" + i);
 		}
 	}

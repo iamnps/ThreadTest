@@ -5,6 +5,5 @@ public class MainThreadTest {
 		for (int i = 0; i < 5; i++) {
 			new Thread(new RunnableTest()).start();
 		}
-		System.out.println("run is over");
 	}
 }
